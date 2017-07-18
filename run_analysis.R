@@ -64,4 +64,4 @@ finalData <- aggregate(extractedData[,3:(ncol(extractedData) - 1)], by=list(extr
 colnames(finalData)[1:2] <- c("activity", "subjectid")
 
 #write data set to file
-write.table(tidyData, 'tidyData.txt',row.names=TRUE,sep='\t')
+write.table(finalData, 'tidyData.txt',row.names=FALSE)
